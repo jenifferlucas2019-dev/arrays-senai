@@ -90,3 +90,40 @@ function verProdutos(){
         "<p>" + j + "°: " + produtos[i] + "</p>"
     } 
 }
+// const diasdasemana = ['Segunda', 'Terça', 'Quarta', 'Quinta', 'Sexta', 'Sábado', 'Domingo'];
+// let copiasemana = [];
+
+// function inverterarray(){
+//     while(diasdasemana.length >0){
+//         let removido = diasdasemana.pop()
+//         copiasemana.push(removido)
+//     }
+//     diasdasemana = copiasemana
+//     console.log(diasdasemana);
+//     //console.log(copiasemana);  
+// }
+
+// const diasDaSemana = ['Segunda', 'Terça', 'Quarta', 'Quinta', 'Sexta', 'Sábado', 'Domingo'];
+// diasDaSemana.push('Feriado');
+// console.log(diasDaSemana);
+
+//  const diasDaSemana = ['Segunda', 'Terça', 'Quarta', 'Quinta', 'Sexta', 'Sábado', 'Domingo'];
+// diasDaSemana.pop(); 
+// console.log(diasDaSemana); 
+
+//  const numerosPares = [2, 4, 6, 8, 10, 12, 14, 16, 18, 20];
+//  numerosPares[2] = 12
+//  console.log(numerosPares); 
+
+// let frutas = ['banana', 'maçã', 'uva'];
+// frutas.push('morango');
+// console.log(frutas); 
+
+// let removerfrutas = ['banana', 'maçã', 'uva' , 'morango'];
+// removerfrutas.pop()
+// removerfrutas[1] = 'uva'
+// removerfrutas[2] = 'morango'
+// console.log(removerfrutas);
+
+// const amigos = ['Lucas', 'Mariana', 'Carlos'];
+// console.log(amigos);
