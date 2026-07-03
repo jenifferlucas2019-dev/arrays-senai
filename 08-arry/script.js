@@ -29,7 +29,7 @@ function inverterArray(){
     }
     diasDaSemana = copiaSemana
     console.log(diasDaSemana);
-    // console.log(copiaSemana);
+     console.log(copiaSemana);
     
     
 }
@@ -83,85 +83,82 @@ function verProdutosComPrecos(){
 }
 
 function verProdutos(){
-    // console.log(produtos);
+    console.log(produtos);
     for(let i=0; i<produtos.length; i++){
         let j = i + 1
         document.getElementById('listaProdutos').innerHTML += 
         "<p>" + j + "°: " + produtos[i] + "</p>"
     } 
 }
-// const diasdasemana = ['Segunda', 'Terça', 'Quarta', 'Quinta', 'Sexta', 'Sábado', 'Domingo'];
-// let copiasemana = [];
+ const diasdasemana = ['Segunda', 'Terça', 'Quarta', 'Quinta', 'Sexta', 'Sábado', 'Domingo'];
+ let copiasemana = [];
 
-// function inverterarray(){
-//     while(diasdasemana.length >0){
-//         let removido = diasdasemana.pop()
-//         copiasemana.push(removido)
-//     }
-//     diasdasemana = copiasemana
-//     console.log(diasdasemana);
-//     //console.log(copiasemana);  
-// }
+ function inverterarray(){
+     while(diasdasemana.length >0){
+       let removido = diasdasemana.pop()
+    copiasemana.push(removido)
+     }
+     diasdasemana = copiasemana
+    console.log(diasdasemana);
+    console.log(copiasemana);  
+ }
 
-// const diasDaSemana = ['Segunda', 'Terça', 'Quarta', 'Quinta', 'Sexta', 'Sábado', 'Domingo'];
-// diasDaSemana.push('Feriado');
-// console.log(diasDaSemana);
+ const diasDaSemana = ['Segunda', 'Terça', 'Quarta', 'Quinta', 'Sexta', 'Sábado', 'Domingo'];
+ diasDaSemana.push('Feriado');
+ console.log(diasDaSemana);
 
-//  const diasDaSemana = ['Segunda', 'Terça', 'Quarta', 'Quinta', 'Sexta', 'Sábado', 'Domingo'];
-// diasDaSemana.pop(); 
-// console.log(diasDaSemana); 
+  const diasDaSemana = ['Segunda', 'Terça', 'Quarta', 'Quinta', 'Sexta', 'Sábado', 'Domingo'];
+ diasDaSemana.pop(); 
+ console.log(diasDaSemana); 
 
-//  const numerosPares = [2, 4, 6, 8, 10, 12, 14, 16, 18, 20];
-//  numerosPares[2] = 12
-//  console.log(numerosPares); 
+  const numerosPares = [2, 4, 6, 8, 10, 12, 14, 16, 18, 20];
+  numerosPares[2] = 12
+  console.log(numerosPares); 
 
-// let frutas = ['banana', 'maçã', 'uva'];
-// frutas.push('morango');
-// console.log(frutas); 
+ let frutas = ['banana', 'maçã', 'uva'];
+ frutas.push('morango');
+ console.log(frutas); 
 
-// let removerfrutas = ['banana', 'maçã', 'uva' , 'morango'];
-// removerfrutas.pop()
-// removerfrutas[1] = 'uva'
-// removerfrutas[2] = 'morango'
-// console.log(removerfrutas);
+ let removerfrutas = ['banana', 'maçã', 'uva' , 'morango'];
+ removerfrutas.pop()
+ removerfrutas[1] = 'uva'
+ removerfrutas[2] = 'morango'
+ console.log(removerfrutas);
 
-// const amigos = ['Lucas', 'Mariana', 'Carlos'];
-// console.log(amigos);
-//  const amigos = ['Lucas', 'Mariana', 'Carlos'];
-//  console.log(amigos);
-// amigos.push('helena','jeferson','fernando')
-// const idades = [17,23,34,9,33,17]
-// console.log(idades);
+ const amigos = ['Lucas', 'Mariana', 'Carlos'];
+ console.log(amigos);
+  const amigos = ['Lucas', 'Mariana', 'Carlos'];
+  console.log(amigos);
+ amigos.push('helena','jeferson','fernando')
+ const idades = [17,23,34,9,33,17]
+ console.log(idades);
 
-// let soma = idades[0] + idades[1]
-// console.log(soma);
-/* jeni agora tem que encontrar a media das idades dos seus amigos entao tem que usar a variavel soma pra isso e comentar o log abaixo
-pra encontrar a media das idades tem que somar todas as idades e dividir por 6. não precisa somar as duas primeiras idades porque
-a variavel soma ja vez isso então tem que só somar o resto */
-// let media = (soma + idades[2]+ idades[3] + idades[4] + idades[5]) / 6
-// console.log(media);
+ let soma = idades[0] + idades[1]
+ console.log(soma);
+ let media = (soma + idades[2]+ idades[3] + idades[4] + idades[5]) / 6
+ console.log(media);
 
-// const produtos =['Maçãs', 'Pão', 'Leite']
-// console.log(produtos);
-// produtos.push('cafe','chocolate')
-// produtos.pop()
-// produtos[2] = 'cafe'
-// produtos[3] = 'chocolate'
-// let verificacao = produtos.includes('Pão')
-// console.log(verificacao);
+ const produtos =['Maçãs', 'Pão', 'Leite']
+ console.log(produtos);
+ produtos.push('cafe','chocolate')
+ produtos.pop()
+ produtos[2] = 'cafe'
+ produtos[3] = 'chocolate'
+ let verificacao = produtos.includes('Pão')
+ console.log(verificacao);
 
-// const impar = [];
-// impar.push(9,1,3,21,11)
-// console.log(impar);
+ const impar = [];
+ impar.push(9,1,3,21,11)
+ console.log(impar);
 
-// const listadenumeros = [10,67,89,21,23,35];
-// let numeros
-// for(let i = 0; i < listadenumeros.length; i++){
-//     numeros = listadenumeros[i] * 2
-//     console.log(numeros);
-// }
+ const listadenumeros = [10,67,89,21,23,35];
+ let numeros
+ for(let i = 0; i < listadenumeros.length; i++){
+     numeros = listadenumeros[i] * 2
+     console.log(numeros);
+ }
 
-// const cidades = ['sao paulo','paris','seul','toquio']
-// function exercicio(){
-//     document.getElementById('texto').innerHTML = "eu gosto de " + cidades[2] + " e adoro " + cidades[3]
-// }
+ const cidades = ['sao paulo','paris','seul','toquio']
+ function exercicio(){
+     document.getElementById('texto').innerHTML = "eu gosto de " + cidades[2] + " e adoro " + cidades[3]
+ }
