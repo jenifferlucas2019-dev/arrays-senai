@@ -127,3 +127,41 @@ function verProdutos(){
 
 // const amigos = ['Lucas', 'Mariana', 'Carlos'];
 // console.log(amigos);
+//  const amigos = ['Lucas', 'Mariana', 'Carlos'];
+//  console.log(amigos);
+// amigos.push('helena','jeferson','fernando')
+// const idades = [17,23,34,9,33,17]
+// console.log(idades);
+
+// let soma = idades[0] + idades[1]
+// console.log(soma);
+/* jeni agora tem que encontrar a media das idades dos seus amigos entao tem que usar a variavel soma pra isso e comentar o log abaixo
+pra encontrar a media das idades tem que somar todas as idades e dividir por 6. não precisa somar as duas primeiras idades porque
+a variavel soma ja vez isso então tem que só somar o resto */
+// let media = (soma + idades[2]+ idades[3] + idades[4] + idades[5]) / 6
+// console.log(media);
+
+// const produtos =['Maçãs', 'Pão', 'Leite']
+// console.log(produtos);
+// produtos.push('cafe','chocolate')
+// produtos.pop()
+// produtos[2] = 'cafe'
+// produtos[3] = 'chocolate'
+// let verificacao = produtos.includes('Pão')
+// console.log(verificacao);
+
+// const impar = [];
+// impar.push(9,1,3,21,11)
+// console.log(impar);
+
+// const listadenumeros = [10,67,89,21,23,35];
+// let numeros
+// for(let i = 0; i < listadenumeros.length; i++){
+//     numeros = listadenumeros[i] * 2
+//     console.log(numeros);
+// }
+
+// const cidades = ['sao paulo','paris','seul','toquio']
+// function exercicio(){
+//     document.getElementById('texto').innerHTML = "eu gosto de " + cidades[2] + " e adoro " + cidades[3]
+// }
