@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deuses do Olimpo</title>
+
+    <style>
+        .celula {
+            display: inline-block;
+            padding: 10px;
+            margin: 5px;
+            border: 1px solid black;
+        }
+
+        .destaque {
+            background-color: yellow;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Deuses do Olimpo</h1>
+
+    <p>
+        Os Deuses do Olimpo são as principais divindades da mitologia grega,
+        que habitavam o Monte Olimpo. Liderados por Zeus, eles governavam o
+        mundo e a vida humana, personificando elementos da natureza e
+        sentimentos.
+    </p>
+
+    <div id="olimpo"></div>
+
+    <br><br>
+
+    <select id="resultado"></select>
+
+    <button onclick="buscarIndice()">Escolher Deus do Olimpo</button>
+
+    <script>
+        const deuses = [
+            "Zeus",
+            "Hera",
+            "Poseidon",
+            "Deméter",
+            "Atena",
+            "Apolo",
+            "Ártemis",
+            "Ares",
+            "Afrodite",
+            "Hermes",
+            "Hefesto",
+            "Dionísio"
+        ];
+
+        const olimpo = document.getElementById("olimpo");
+        const seletor = document.getElementById("resultado");
+
+        for (let i = 0; i < deuses.length; i++) {
+            olimpo.innerHTML += `<div class="celula">${deuses[i]}</div>`;
+            seletor.innerHTML += `<option>${deuses[i]}</option>`;
+        }
+
+        function buscarIndice() {
+            const celulas = document.querySelectorAll(".celula");
+
+            for (let i = 0; i < celulas.length; i++) {
+                celulas[i].classList.remove("destaque");
+            }
+
+            const nomeEscolhido = seletor.value;
+
+            let indice = -1;
+            let i = 0;
+
+            while (i < deuses.length) {
+                if (deuses[i] === nomeEscolhido) {
+                    indice = i;
+                    break;
+                }
+                i++;
+            }
+
+            if (indice !== -1) {
+                celulas[indice].classList.add("destaque");
+            } else {
+                alert("Deus não encontrado!");
+            }
+        }
+    </script>
+
+</body>
+</html>
