@@ -6,40 +6,48 @@
     <title>Deuses do Olimpo</title>
 
     <style>
-        .celula {
+        body{
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+
+        .celula{
             display: inline-block;
             padding: 10px;
             margin: 5px;
             border: 1px solid black;
+            border-radius: 5px;
         }
 
-        .destaque {
+        .destaque{
             background-color: yellow;
             font-weight: bold;
         }
     </style>
 </head>
-
 <body>
 
     <h1>Deuses do Olimpo</h1>
 
     <p>
         Os Deuses do Olimpo são as principais divindades da mitologia grega,
-        que habitavam o Monte Olimpo. Liderados por Zeus, eles governavam o
-        mundo e a vida humana, personificando elementos da natureza e
-        sentimentos.
+        que habitavam o Monte Olimpo.
     </p>
 
     <div id="olimpo"></div>
 
     <br><br>
 
-    <select id="resultado"></select>
+    <input type="text" id="pesquisa" placeholder="Digite o nome do deus">
 
-    <button onclick="buscarIndice()">Escolher Deus do Olimpo</button>
+    <button onclick="buscarIndice()">
+        Buscar Deus
+    </button>
+
+    <p id="resultado"></p>
 
     <script>
+
         const deuses = [
             "Zeus",
             "Hera",
@@ -56,39 +64,46 @@
         ];
 
         const olimpo = document.getElementById("olimpo");
-        const seletor = document.getElementById("resultado");
+        const pesquisa = document.getElementById("pesquisa");
+        const resultado = document.getElementById("resultado");
 
-        for (let i = 0; i < deuses.length; i++) {
+        for(let i = 0; i < deuses.length; i++){
             olimpo.innerHTML += `<div class="celula">${deuses[i]}</div>`;
-            seletor.innerHTML += `<option>${deuses[i]}</option>`;
         }
 
-        function buscarIndice() {
+        function buscarIndice(){
+
             const celulas = document.querySelectorAll(".celula");
 
-            for (let i = 0; i < celulas.length; i++) {
+            // Remove o destaque anterior
+            for(let i = 0; i < celulas.length; i++){
                 celulas[i].classList.remove("destaque");
             }
 
-            const nomeEscolhido = seletor.value;
+            const nomeEscolhido = pesquisa.value.trim();
 
             let indice = -1;
             let i = 0;
 
-            while (i < deuses.length) {
-                if (deuses[i] === nomeEscolhido) {
+            while(i < deuses.length){
+
+                if(deuses[i].toLowerCase() == nomeEscolhido.toLowerCase()){
                     indice = i;
                     break;
                 }
+
                 i++;
             }
 
-            if (indice !== -1) {
+            if(indice != -1){
                 celulas[indice].classList.add("destaque");
-            } else {
-                alert("Deus não encontrado!");
+                resultado.innerHTML = "Índice encontrado: " + indice;
+            }else{
+                resultado.innerHTML = "Deus não encontrado!";
             }
+
         }
+
     </script>
 
 </body>
